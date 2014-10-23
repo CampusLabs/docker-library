@@ -9,6 +9,8 @@ RUN apt-get update && \
         libcurl4-openssl-dev=7.26.0-1+wheezy10 \
         libevent-dev=2.0.19-stable-3 \
         libsasl2-dev=2.1.25.dfsg1-6+deb7u1 \
+        libmemcached-dev=1.0.8-1 \
+        libmemcached-dbg=1.0.8-1 \
         libffi-dev=3.0.10-3 \
         libglib2.0-dev=2.33.12+really2.32.4-5 \
         libncurses5-dev=5.9-10 \
