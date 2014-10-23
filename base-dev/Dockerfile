@@ -1,8 +1,9 @@
 FROM orgsync/base
 MAINTAINER Clifton King <cliftonk@gmail.com>
 
-RUN apt-get update && \
-    apt-get install -y \
+RUN apt-get update \
+    && apt-get install -y \
+        git=1:1.7.10.4-1+wheezy1 \
         autoconf=2.69-1 \
         build-essential=11.5 \
         libbz2-dev=1.0.6-4 \
@@ -23,5 +24,5 @@ RUN apt-get update && \
         libmysqlclient-dev=5.5.40-0+wheezy1 \
         libpq-dev=9.1.14-0+deb7u1 \
         libsqlite3-dev=3.7.13-1+deb7u1 \
-        && \
-    rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
