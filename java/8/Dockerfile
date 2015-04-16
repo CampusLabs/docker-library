@@ -13,7 +13,7 @@ RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" \
     && apt-get update \
     && apt-get install -y \
         python-software-properties=0.82.7.1debian1 \
-        oracle-java8-installer=8u31+8u33arm-1~webupd8~1 \
+        oracle-java8-installer=8u45+8u33arm-1~webupd8~0 \
     && update-alternatives --display java \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get clean
